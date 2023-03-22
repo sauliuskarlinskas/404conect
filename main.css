@@ -3,17 +3,73 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-     width: 800px;
-    margin-left: calc(50% - 400px);
+    display: flex;
+     width: 100%;
+     padding-left: 40px;
+     padding-right: 40px;
 }
     .main-header {
    display: flex;
    margin-top: 20px;
    margin-bottom: 50px;
    align-items: center;
-   gap: 10px;
    justify-content: space-between;
  
+}
+@media (max-width: 460px) {
+    .logo,
+    .main-nav {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1100px) {
+    .container {
+        width: 800px;
+        
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 460px) {
+    .container {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 1100px) {
+    .main-header {
+        width: 800px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 900px) {
+    .main-header {
+        width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 700px) {
+    .main-header {
+        width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 .logo {
     height: 40px;
